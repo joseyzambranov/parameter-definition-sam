@@ -125,6 +125,8 @@ Resources:
       # Folder path that contains the file specified in the "handler" (see globals)
       # Use "dist" instead of "src", since it needs to point to the compiled ".js" files
       CodeUri: ./dist/myFunction
+      Architectures:
+        - arm64
       Events:
         MyFunctionApi:
           # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
@@ -146,6 +148,8 @@ Resources:
       # Folder path that contains the file specified in the "handler" (see globals)
       # Use "dist" instead of "src", since it needs to point to the compiled ".js" files
       CodeUri: ./dist/MyFunction2
+      Architectures:
+        - arm64
       Events:
         MyFunctionApi:
           # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
@@ -169,6 +173,8 @@ Resources:
       ContentUri: ./dist/myLayer
       CompatibleRuntimes:
         - nodejs14.x
+      CompatibleArchitectures:
+        - arm64  
       LicenseInfo: "MIT"
       RetentionPolicy: Retain
     # Important to allow sam to build the layer and take advantage of sam's dependecy caching

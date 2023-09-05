@@ -1,30 +1,30 @@
 version = 0.1
 [DEV.deploy.parameters]
-stack_name = "sinc-0001-scsn-snd-cf-00"
-resolve_s3 = true
-s3_prefix = "sinc-0001-scsn-snd-cf-00"
+stack_name = "sinc-0001-scsn-snd"
+s3_prefix = "sinc-0001-scsn-snd-s3-01"
+s3_bucket = "sinc-0001-scsn-snd-s3-01"
 region = "us-east-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_NAMED_IAM"
-parameter_overrides = "ENV=\"DEV\" ASSETID=\"0001\" APID=\"SCSN\" SID=\"SND\" COID=\"SINC\" S3BucketName=\"sinc-0001-scsn-snd-s3-00\" NameBucket=\"sinc-0001-scsn-snd-s3-01\" token=\"\" apiStage=\"DEV\""
+parameter_overrides = "ENV=\"DEV\" ASSETID=\"0001\" APID=\"SCSN\" SID=\"SND\" COID=\"SINC\" S3BucketName=\"sinc-0001-scsn-snd-s3-01\" NameBucket=\"sinc-0001-scsn-snd-s3-01\" token=\"\" apiStage=\"DEV\""
 image_repositories = []
 
 [PRD.deploy.parameters]
-stack_name = "sinc-0001-scsn-snp-cf-00"
-resolve_s3 = true
-s3_prefix = "sinc-0001-scsn-snp-cf-00"
+stack_name = "sinc-0001-scsn-snp"
+s3_prefix = "sinc-0001-scsn-snp-s3-00"
+s3_bucket = "sinc-0001-scsn-snp-s3-00"
 region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_NAMED_IAM"
-parameter_overrides = "ENV=\"PRD\" ASSETID=\"0001\" APID=\"SCSN\" SID=\"SNP\" COID=\"SINC\" S3BucketName=\"sinc-0001-scsn-snp-s3-00\" NameBucket=\"sinc-0001-scsn-snp-s3-01\" token=\"\" apiStage=\"PRD\""
+parameter_overrides = "ENV=\"PRD\" ASSETID=\"0001\" APID=\"SCSN\" SID=\"SNP\" COID=\"SINC\" S3BucketName=\"sinc-0001-scsn-snp-s3-00\" NameBucket=\"sinc-0001-scsn-snp-s3-00\" token=\"\" apiStage=\"PRD\""
 image_repositories = []
 
 [TST.deploy.parameters]
-stack_name = "sinc-0001-scsn-snt-cf-00"
-resolve_s3 = true
-s3_prefix = "sinc-0001-scsn-snt-cf-00"
+stack_name = "sinc-0001-scsn-snt"
+s3_prefix = "sinc-0001-scsn-snt-s3-00"
+s3_bucket = "sinc-0001-scsn-snt-s3-00"
 region = "us-west-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_NAMED_IAM"
-parameter_overrides = "ENV=\"TST\" ASSETID=\"0001\" APID=\"SCSN\" SID=\"SNT\" COID=\"SINC\" S3BucketName=\"sinc-0001-scsn-snt-s3-00\" NameBucket=\"sinc-0001-scsn-snt-s3-01\" token=\"\" apiStage=\"TST\""
+parameter_overrides = "ENV=\"TST\" ASSETID=\"0001\" APID=\"SCSN\" SID=\"SNT\" COID=\"SINC\" S3BucketName=\"sinc-0001-scsn-snt-s3-00\" NameBucket=\"sinc-0001-scsn-snt-s3-00\" token=\"\" apiStage=\"TST\""
 image_repositories = []
