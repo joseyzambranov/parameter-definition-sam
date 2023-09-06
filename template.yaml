@@ -111,7 +111,7 @@ Resources:
   MyFunctionApi:
     Type: AWS::Serverless::Api
     Properties:
-      Name: !Sub "${COID}-${ASSETID}-${APID}-${SID}-AG-01"
+      Name: !Sub "${COID}-${ASSETID}-${APID}-${SID}-AG-00"
       StageName: !Ref apiStage
 
   # First of the 2 functions

@@ -4,7 +4,7 @@ export const handler: LambdaHandler = async (event) => {
     return {
         statusCode: 200,
         body: JSON.stringify({
-            message: "Hello World from function DEV Modified arm64!"
+            message: "Hello World from function Production ready!"
         })
     };
 };
